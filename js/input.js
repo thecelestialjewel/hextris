@@ -18,25 +18,6 @@ function addKeyListeners() {
 		}
 	});
 
-	//IMPLEMENTED CHANGES: Play Key Changes
-	keypress.register_combo({
-		keys: "up",
-		on_keydown: function () {
-			if (MainHex && gameState !== 0) {
-				MainHex.rotate(1);
-			}
-		}
-	});
-
-	//IMPLEMENTED CHANGES: Play Key Changes
-	keypress.register_combo({
-		keys: "down",
-		on_keydown: function () {
-			if (MainHex && gameState !== 0) {
-				MainHex.rotate(-1);
-			}
-		}
-	});
 		keypress.register_combo({
 		keys: "down",
 		on_keydown: function() {
