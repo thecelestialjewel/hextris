@@ -75,11 +75,12 @@ function renderBeginningText() {
         input_text = 'Tap the screen\'s left and right'
         action_text = 'sides to rotate the hexagon'
         score_text = 'Match 3+ blocks to score'
-        fontSize = 35
+		fontSize = 35
+		//CHANGES: ADDED M KEY TO PLAY/MUTE MUSIC -CMJ/KC
     } else {
         mob = false
-        input_text = 'Use the right and left arrow keys'
-        action_text = 'to rotate the hexagon'
+		input_text = 'Use the right and left arrow keys'
+		action_text = 'to rotate the hexagon, M key for Start/Stop Music'
         score_text = 'Match 3+ blocks to score!'
         fontSize = 27
     }

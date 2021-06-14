@@ -96,6 +96,19 @@ function addKeyListeners() {
 			}
 		}
 	});
+
+	keypress.register_combo({
+		keys: "m",
+		on_keydown: function () {
+			var audioPlayer = document.getElementById('gameMusic');
+			if (audioPlayer.paused) {
+				audioPlayer.play();
+			} else {
+				audioPlayer.pause();
+            }
+        }
+	});
+
 	keypress.register_combo({
 		keys: "s",
 		on_keydown: function() {
