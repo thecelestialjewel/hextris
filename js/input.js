@@ -1,3 +1,4 @@
+//Christine Jordan & Kelcee Chorba W9 Project Updates
 function addKeyListeners() {
 	keypress.register_combo({
 		keys: "left",
@@ -12,6 +13,26 @@ function addKeyListeners() {
 		keys: "right",
 		on_keydown: function() {
 			if (MainHex && gameState !== 0){
+				MainHex.rotate(-1);
+			}
+		}
+	});
+
+	//IMPLEMENTED CHANGES: Play Key Changes
+	keypress.register_combo({
+		keys: "up",
+		on_keydown: function () {
+			if (MainHex && gameState !== 0) {
+				MainHex.rotate(1);
+			}
+		}
+	});
+
+	//IMPLEMENTED CHANGES: Play Key Changes
+	keypress.register_combo({
+		keys: "down",
+		on_keydown: function () {
+			if (MainHex && gameState !== 0) {
 				MainHex.rotate(-1);
 			}
 		}
@@ -56,7 +77,25 @@ function addKeyListeners() {
 			}
 		}
 	});
-	
+
+	//CHANGES: Added code for access to use left-handed player placement (IJKL style) -CMJ/KC
+	keypress.register_combo({
+		keys: "j",
+		on_keydown: function () {
+			if (MainHex && gameState !== 0) {
+				MainHex.rotate(1);
+			}
+		}
+	});
+	//CHANGES: Added code for access to use left-handed player placement (IJKL style) -CMJ/KC
+	keypress.register_combo({
+		keys: "l",
+		on_keydown: function () {
+			if (MainHex && gameState !== 0) {
+				MainHex.rotate(-1);
+			}
+		}
+	});
 	keypress.register_combo({
 		keys: "s",
 		on_keydown: function() {
