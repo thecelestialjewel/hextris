@@ -1,3 +1,5 @@
+//Christine Jordan and Kelcee Chorba CIS 269 Week 9 Project 6.4.2021
+//CHANGES WHERE WE ADDDED MUSIC INSTRUCTIONS
 function render() {
 	var grey = '#bdc3c7';
 	if (gameState === 0) {

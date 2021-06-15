@@ -1,4 +1,7 @@
 //Christine Jordan & Kelcee Chorba W9 Project Updates
+//CIS 269 Week 9 Project 6.14.2021
+//ADDED J/L (Movement for Left handed players) & M (music mute/unmute) keys
+//KEYS WILL ALLOW USER TO CONTROL MUSIC AND MOVE HEXTRIS
 function addKeyListeners() {
 	keypress.register_combo({
 		keys: "left",
@@ -59,7 +62,8 @@ function addKeyListeners() {
 		}
 	});
 
-	//CHANGES: Added code for access to use left-handed player placement (IJKL style) -CMJ/KC
+	//CHANGES: Added code for access to use left-handed player placement (IJKL style) -CJ/KC
+	//REFERENCE: Used code from this file to model key press events
 	keypress.register_combo({
 		keys: "j",
 		on_keydown: function () {
@@ -68,7 +72,7 @@ function addKeyListeners() {
 			}
 		}
 	});
-	//CHANGES: Added code for access to use left-handed player placement (IJKL style) -CMJ/KC
+	//CHANGES: Added code for access to use left-handed player placement (IJKL style) -CJ/KC
 	keypress.register_combo({
 		keys: "l",
 		on_keydown: function () {
@@ -77,7 +81,7 @@ function addKeyListeners() {
 			}
 		}
 	});
-
+	//CHANGES: Added code giving player the ability to mute/unmute music with use of the M key. -CJ/KC
 	keypress.register_combo({
 		keys: "m",
 		on_keydown: function () {
